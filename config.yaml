@@ -9,7 +9,7 @@ search_space:
     _type: uniform
     _value: [ 0, 1 ]
 
-trial_command: python model.py
+trial_command: python /path/to/your/model.py
 trial_code_directory: .
 
 trial_concurrency: 2

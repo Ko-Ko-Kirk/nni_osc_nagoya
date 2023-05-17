@@ -9,7 +9,7 @@ pip install --upgrade nni
 
 ## Run NNI
 ```
-nnictl create --config config.yml --port 5566
+nnictl create --config config.yaml --port 5566
 ```
 
 ## Check NNI
@@ -24,11 +24,11 @@ http://localhost:5566
 
 ## Stop NNI
 ```
-nnictl stop
+nnictl stop --all
 ```
 
 ## Run on Azure Machine learning
-1. Add your Azure Machine Learning workspace information in config.yml
+1. Add your Azure Machine Learning workspace information in config.yaml
 ```
 training_service:
      platform: aml
@@ -52,7 +52,7 @@ az login
 
 4. Run NNI
 ```
-nnictl create --config config.yml
+nnictl create --config config.yaml
 ```
 
 5. Check NNI in Azure ML Studio
